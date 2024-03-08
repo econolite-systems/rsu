@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<!-- SPDX-License-Identifier: MIT -->
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Econolite.Ode.Snmp.Rsu</RootNamespace>
+    <Copyright>2023-&lt;&lt;CURRENT_YEAR&gt;&gt; Econolite Systems, Inc.</Copyright>
+</PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Lextm.SharpSnmpLib" Version="12.5.1" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
+      <PackageReference Include="Polly" Version="7.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="$(SolutionDir)\common\Scheduler.Base\Scheduler.Base.csproj" />
+      <ProjectReference Include="..\Domain.Rsu\Domain.Rsu.csproj" />
+      <ProjectReference Include="..\Models.Rsu\Models.Rsu.csproj" />
+    </ItemGroup>
+
+
+</Project>

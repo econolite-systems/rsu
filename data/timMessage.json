@@ -1,0 +1,69 @@
+{
+  "request": {
+    "rsus": ["770154ef-7413-439c-88a6-81df60f73a48"],
+    "snmp": {
+      "rsuId": "8083",
+      "msgid": 31,
+      "mode": 1,
+      "channel": 178,
+      "interval": 2,
+      "deliveryStart": "2023-04-12T13:40:16.068Z",
+      "deliveryStop": "2023-04-12T13:40:16.068Z",
+      "enable": true,
+      "status": 1
+    }
+  },
+  "tim": {
+    "msgCnt": 1,
+    "timeStamp": "2023-04-10T13:40:16.068Z",
+    "dataFrames": [
+      {
+        "msgId": {
+          "furtherInfoID": "84"
+        },
+        "startTime": "2023-04-10T13:40:16.068Z",
+        "duration": 300,
+        "priority": 4,
+        "regions": [
+          {
+            "name": "bob",
+            "id": {
+              "region": 1,
+              "id": 1
+            },
+            "anchor": {
+              "latitude": 41.678473,
+              "longitude": -108.782775,
+              "elevation": 917.1432
+            },
+            "directionality": 1,
+            "direction": "1000000000000011",
+            "description": {
+              "geometry": {
+                "circle": {
+                  "center": {
+                    "latitude": 41.678473,
+                    "longitude": -108.782775,
+                    "elevation": 917.1432
+                  },
+                  "radius": 2,
+                  "units": 7
+                },
+                "direction": "1000000000000011"
+              }
+            }
+          }
+        ],
+        "content": {
+          "advisory": {
+            "items": [
+              {
+                "itis": 534
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

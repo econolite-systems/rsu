@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+<!-- SPDX-License-Identifier: MIT -->
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <OutputType>Library</OutputType>
+    <Copyright>2023-&lt;&lt;CURRENT_YEAR&gt;&gt; Econolite Systems, Inc.</Copyright>
+</PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="$(SolutionDir)\asn1-j2735\Domain.Asn1.J2735\Domain.Asn1.J2735.csproj" />
+        <ProjectReference Include="$(SolutionDir)\common\Modules\Modules.csproj" />
+        <ProjectReference Include="$(SolutionDir)\common\Monitoring\Monitoring.csproj" />
+        <ProjectReference Include="..\Snmp.Rsu\Snmp.Rsu.csproj" />
+    </ItemGroup>
+</Project>

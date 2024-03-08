@@ -1,0 +1,12 @@
+odeServiceRsuLogger:
+  name: ode-service-rsu-logger
+  imageRepository: cosysdev.azurecr.io/ode-service-rsu-logger
+  service:
+    port: 80
+  probes:
+    enabled: false
+  ingress:
+    host: api.mound-rd.cosysdev.com
+  kafka:
+    groupId: 'ode-service-rsu-logger'
+  resources: {}

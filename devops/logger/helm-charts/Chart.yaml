@@ -1,0 +1,4 @@
+apiVersion: v1
+description: ODE Rsu Log Service
+name: "ode-service-rsu-logger"
+version: 0.1.0

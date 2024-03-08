@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<!-- SPDX-License-Identifier: MIT -->
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Econolite.Ode.Models.Rsu</RootNamespace>
+    <Copyright>2023-&lt;&lt;CURRENT_YEAR&gt;&gt; Econolite Systems, Inc.</Copyright>
+</PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="$(SolutionDir)\common\Persistence.Common\Persistence.Common.csproj" />
+      <ProjectReference Include="$(SolutionDir)\status\Status.Rsu\Status.Rsu.csproj" />
+      <ProjectReference Include="$(SolutionDir)\entities\Models.Entities\Models.Entities.csproj" />
+    </ItemGroup>
+
+
+
+</Project>

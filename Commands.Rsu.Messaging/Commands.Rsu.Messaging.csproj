@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<!-- SPDX-License-Identifier: MIT -->
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Econolite.Ode.Commands.Rsu.Messaging</RootNamespace>
+    <Copyright>2023-&lt;&lt;CURRENT_YEAR&gt;&gt; Econolite Systems, Inc.</Copyright>
+</PropertyGroup>
+
+
+    <ItemGroup>
+        <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions"/>
+      <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+    </ItemGroup>
+
+
+
+
+    <ItemGroup>
+      <ProjectReference Include="$(SolutionDir)\common\Messaging\Messaging.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+<!-- SPDX-License-Identifier: MIT -->
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <OutputType>Exe</OutputType>
+        <UserSecretsId>af00556e-c7dd-4ff5-bc70-4d25b597f045</UserSecretsId>
+    <Copyright>2023-&lt;&lt;CURRENT_YEAR&gt;&gt; Econolite Systems, Inc.</Copyright>
+</PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.16" />
+        <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.27.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.27.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="$(SolutionDir)\common\Extensions\Extensions.csproj" />
+        <ProjectReference Include="$(SolutionDir)\common\Modules\Modules.csproj" />
+        <ProjectReference Include="$(SolutionDir)\common\Monitoring\Monitoring.csproj" />
+        <ProjectReference Include="..\Commands.Rsu.Messaging\Commands.Rsu.Messaging.csproj" />
+        <ProjectReference Include="..\Configuration.Snmp.Rsu\Configuration.Snmp.Rsu.csproj" />
+        <ProjectReference Include="..\Domain.Rsu\Domain.Rsu.csproj" />
+        <ProjectReference Include="..\Module.Rsu\Module.Rsu.csproj" />
+        <ProjectReference Include="..\Snmp.Rsu\Snmp.Rsu.csproj" />
+    </ItemGroup>
+
+</Project>
